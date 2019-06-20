@@ -1,0 +1,162 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+body{
+  margin: 30px;
+  background-color: #02010a;
+}
+header{
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+    background-color:  #5b7989;
+}
+header > h1 {
+  float: left;
+  color:  white;
+  text-shadow: 1px 2px 3px  #02010a;
+}
+nav>a{
+  font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+
+}
+nav>a[href]{
+  text-decoration: underline;
+}
+nav{
+text-align: right;
+}
+h1,a{
+  font-family: 'Dancing Script', cursive;
+}
+.img-2{
+  margin: 10%;
+  width: 80%;
+}
+.img-1,.img-3{
+  border: 2px solid #82c3a6;
+  width: 100%;
+}
+
+.foto{
+  margin: 5%;
+  float: left;
+  width: 40%;
+}
+.cont{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #82c3a6;
+}
+.cont-2{
+  width: 100%;
+  background-color: #d5c75f;
+  padding: 10%
+
+}
+.cont-2>img{
+  margin: 11px;
+}
+.img-1{transition: transform 0.2s}
+.img-1:hover{
+  transform: rotate(10deg);
+}
+.img-3{transition: transform 0.2s}
+.img-3:hover{
+  transform: translate(5px, -20px);
+}
+.texto-bajo{
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+.pie{
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  height: 230px;
+  background-color: #C6d5c5;
+}
+.politicas,.redes,.copy,.contacto{
+  width: 150px;
+  font-family: arial;
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  height: 190px;
+  border-radius: 10px;
+}
+.redes{width:100px;}
+.title-pie{
+  font-family: 'Dancing Script', cursive;
+}
+li{
+  font-family: Schadow BT, cursive;
+  list-style:none
+
+}
+.xox{
+  color: black;
+  text-decoration: none;
+  font-family: Schadow BT, cursive;
+  cursor: pointer;
+}
+.xox:hover{
+  color: orange;
+  transition: 0.2s;
+}
+img{
+  box-shadow: 2px 2px 2px  #02010a;
+}
+.contenido{
+  width: 900px;
+  margin: auto;
+}
+
+.img-ret{
+  width: 30%;
+  margin: 1.5%;
+  box-shadow: none;
+}
+
+#blur{filter: blur(10px);}
+#par{-webkit-filter: grayscale(100%);}
+#sep{-webkit-filter: sepia(90%);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  header{text-align: center;}
+  nav{position: relative;top: 0px;text-align: center;}
+  nav>a{font-size: 20px;}
+  .img-1,.img-3{float: none;width: 100%}
+  .foto{width: 100%; margin: 0px;}
+  .pie{height: 880px;}
+  .politicas,.redes,.copy,.contacto{float: none;width: 50%;margin: 10px 25%;}
+  .title-pie{text-align: center;}
+  .contenido{width: 95%;}
+  header > h1 {float: none;}
+  .img-ret{width: 100%; padding: 20px;}
+
+}
